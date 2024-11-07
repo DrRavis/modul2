@@ -8,8 +8,8 @@ for a in range(1, 20):
         else:
             continue
 print(result)
-check = input('Для проверки: ')
-if check == result:
-    print('Всё правильно!')
-else:
-    print('Где-то ошибка')
+# check = input('Для проверки: ')
+# if check == result:
+#    print('Всё правильно!')
+# else:
+#    print('Где-то ошибка')
