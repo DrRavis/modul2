@@ -5,12 +5,15 @@ for n in range(len(numbers)):
     if numbers[n] == 1:
         continue
     is_prime = True
-    b = 0
-    for a in range(1, 10):
-            while numbers[n] % a == 0:
-                b = b + 1
-                if b > 2:
+    divisors = 0
+    for a in range(2, numbers[n]):
+        while divisors == 0:
+            if numbers[n] % a == 0:
+                divisors = divisors + 1
+                if divisors > 0:
                     is_prime = False
+                break
+            else:
                 break
     if is_prime == False:
         not_primes.append(numbers[n])
